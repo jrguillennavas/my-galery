@@ -1,0 +1,28 @@
+
+.header__name{
+    font-size: 2.4rem;
+}
+.header__contry{
+    font-size: 1.4rem;
+}
+.header__photo{
+    width: 12%;
+}
+.social{
+    width: 30%;
+}
+.social__content{
+    width: 10rem;
+    height: 6.7rem;
+}
+.count{
+    font-size: 1.8rem;
+}
+.detail{
+    font-size: 1.4rem;
+}
+.galery{
+    margin: auto;
+    width: 80%;
+    grid-gap: 2.5rem;
+}

@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.layout{
+    width: 100%;
+    max-width: 1440px;
+    max-height: 1577px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 6rem;
+
+    grid-template-areas: "HEADER"
+                         "MAIN"
+                         "FOOTER";
+}
+
+
+.header{
+    grid-area: HEADER;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.header__photo{
+    width: 30%;
+    border-radius: 1.6rem;
+}
+.header__name{
+    font-size: 1.4rem;
+    color: #4e5150;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.header__contry{
+    font-size: 1rem;
+    color: #a3a3a3;
+    margin-bottom: 1rem;
+}
+.social{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.social__content{
+    width: 7.8rem;
+    height: 5.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e5;
+    border-radius: 1.2rem;
+}
+.count{
+    font-size: 1.2rem;
+    color: #4e5150;
+}
+.detail{
+    font-size: 1.2rem;
+    color: #bdbdbd;
+}
+.galery{
+    grid-area: MAIN;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.galery__photo--modif{
+    border-radius: 1.2rem;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.5);
+}
+.galery__photo1{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.galery__photo2{
+    width: 100%;
+    height: 100%;
+    grid-column: 2/-1;
+    grid-row: 1/2;
+}
+.galery__photo3{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+.galery__photo4{
+    width: 100%;
+    height: 100%;
+    border-radius: 3.5rem;
+    grid-column: 3/4;
+    grid-row: 2/-1;
+}
+.galery__photo5{
+    width: 100%;
+    height: 100%;
+    grid-row: 3/-1;
+    grid-column: 1/2;
+}
+.galery__photo6{
+    width: 100%;
+    height: 100%;
+    grid-row: 3/-1;
+    grid-column: 2/3;
+    
+}
+
+.information{
+    grid: FOOTER;
+    padding-top: 1rem;
+    text-align: center;
+    color: #a9a9a9;
+    font-size: 1.2rem;
+}
